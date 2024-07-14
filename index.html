@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="recipes, food, cooking, cuisine, meals, ingredients, food information, healthy recipes, quick meals, dinner ideas, breakfast recipes, lunch recipes, dessert recipes, vegetarian recipes, vegan recipes, gluten-free recipes, cooking tips, food blog, culinary arts">
+  <meta name="description" content="Discover a world of delicious recipes and food information. Find healthy, quick, and easy recipes for breakfast, lunch, dinner, and desserts. Explore vegetarian, vegan, and gluten-free options, and get cooking tips and ingredient insights to elevate your culinary skills.">
+  <meta name="author" content="Yousef Elsayed">
+  <title>Yummy</title>
+  
+  <!-- Site Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <!-- Normalization CSS File-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div
+    class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center d-none">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+
+
+
+
+  <div class="sidebar-menu min-vh-100 position-fixed d-flex top-0 start-0">
+    <div class="sidebar-left d-flex flex-column justify-content-between min-vh-100 ">
+      <div class="sidebar-links">
+        <ul class="list-unstyled overflow-hidden">
+          <li onclick="showSearch(); closeSidebar()" class="py-2 position-relative cursor-pointer">Search</li>
+          <li onclick="getCategories(); closeSidebar()" class="py-2 position-relative cursor-pointer">Categories</li>
+          <li onclick="getArea(); closeSidebar()" class="py-2 position-relative cursor-pointer">Area</li>
+          <li onclick="getIngredients(); closeSidebar()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+          <li onclick="showContact(); closeSidebar()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-icons">
+          <i class="fa-brands fa-facebook cursor-pointer"></i>
+          <i class="fa-brands fa-twitter cursor-pointer"></i>
+          <i class="fa-solid fa-globe cursor-pointer"></i>
+        </div>
+        <div class="sidebar-footer-caption">
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sidebar-right d-flex flex-column justify-content-between align-items-center py-4 text-center bg-white text-black">
+      <img class="logo" src="images/logo.png" alt="site logo">
+      <i class="sidebar-open-close fa-solid fa-align-justify"></i>
+      <div class="d-flex flex-column">
+        <i class="fa-solid fa-globe my-1 cursor-pointer"></i>
+        <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container w-75" id="searchContainer">
+
+  </div>
+
+  <div class="home min-vh-100 position-relative">
+    <div class="container">
+      <div class="row py-5 g-4" id="homeData">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Jquery JS File-->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
